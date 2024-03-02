@@ -1,0 +1,113 @@
+h1, h2, p {
+    text-align: center;
+}
+h1, h2{
+    font-family: Impact;
+}
+/*Add another style to the file that changes the background-color property to brown for the body element.*/
+
+body{
+    padding: 20px;
+    font-family: sans-serif;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);  /*background-image -> for insert image in a background*/
+}
+
+/*
+    The goal now is to make the div not take up the entire width of the page. The CSS width property is perfect for this.
+
+    You can use the id selector to target a specific element with an id attribute. An id selector is defined by placing the hash symbol # directly in front of the element's id value
+*/
+/*
+Next, you want to center the #menu horizontally. You can do this by setting its margin-left and margin-right properties to auto. Think of the margin as invisible space around an element.
+*/
+#menu{
+    max-width: 500px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: burlywood;
+    font-size: 18px;
+}
+/*
+The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested anywhere in elements with a class named item like this:
+*/
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.flavor, .dessert{
+    text-align: left;
+    width: 75%;
+}
+.price{
+    text-align: right;
+    width: 24%;
+}
+
+.established{
+    font-style: italic;
+}
+
+h1{
+    margin-top: 0px;
+    margin-bottom: 15px;;
+    font-size:40px;
+}
+h2{
+    font-size:30px;
+}
+
+hr{
+    height:2px;
+    border-color:brown;
+    background-color: brown;
+}
+.bottom-line{
+    margin-top:25px;
+}
+
+/*FOOTER*/
+/*
+The default color of a link that has not yet been clicked on is typically blue. The default color of a link that has already been visited from a page is typically purple.
+*/
+footer{
+    font-size: 14px;;
+}
+a{
+    color: black;
+}
+/*
+You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+*/
+a:visited{
+    color: black;
+}
+/*
+You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.
+*/
+a:hover{
+    color: brown;
+    font-size: 15px;
+}
+/*
+You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
+*/
+a:active{
+    color:brown;
+}
+.address{
+    margin-bottom:5px;
+}
+
+/*
+coffee icon
+*/
+img{
+    margin-top: -25px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}

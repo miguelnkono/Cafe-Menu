@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Now you need to link the styles.css file so the styles will be applied again. Nest a self-closing link element in the head element. Give it a rel attribute value stylesheet and an href attribute value of styles.css.-->
+        <meta charset="utf-8">
+        <!--For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cafe Menu</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="menu">
+            <!--The div element is used mainly for design layout purposes unlike the other content elements you have used so far. Add a div element inside the body element and then move all the other elements inside the new div.-->
+            <!--Up until now, you have been limited regarding the presentation and appearance of the content you create. To start taking control, add a style element within the head element.-->
+            <main>
+                <h1>CAMPER CAFE</h1>
+                <p class="established">Est. 2020</p>
+                <hr>
+                <!--Section for coffee-->
+                <!--You can use an hr element to display a divider between sections of different content.-->
+                <section>
+                    <h2>Coffee</h2>
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coofee icon">
+                    <!--That is kind of what you want, but now it would be nice if the flavor and price were on the same line. p elements are block-level elements, so they take up the entire width of their parent element.-->
+                    <article class="item">
+                        <!--article elements commonly contain multiple elements that have related information.-->
+                        <p class="flavor">French Vanilla</p>
+                        <p class="price">3.00</p>
+                    </article>
+                    <article class="item">
+                        <p class="flavor">Caramel Macchiato</p>
+                        <p class="price">3.75</p>
+                    </article>
+                    <article class="item">
+                        <p class="flavor">Pumpkin Spice</p>
+                        <p class="price">3.50</p>
+                    </article>
+                    <article class="item">
+                        <p class="flavor">Hazelnut</p>
+                        <p class="price">4.00</p>
+                    </article>
+                    <article class="item">
+                        <p class="flavor">Mocha</p>
+                        <p class="price">4.50</p>
+                    </article>
+                </section>
+
+                <section>
+                    <h2>Desserts</h2>
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
+                    <article class="item">    
+                        <p class="dessert">Donut</p>
+                        <p class="price">1.50</p>
+                    <article class="item">
+                        <p class="dessert">Cherry Pie</p>
+                        <p class="price">2.75</p>
+                    </article>
+                    <article class="item">
+                        <p class="dessert">Cheesecake </p>
+                        <p class="price">3.00</p>
+                    </article>
+                    <article class="item">
+                        <p class="dessert">Cinnamon Roll</p>
+                        <p class="price">2.50</p>
+                    </article>
+                </section>
+            </main>
+            <hr class="bottom-line">
+            <footer>
+                <p><a href="https://www.freecodecamp.org " target="_blank">Visit our web site</a></p>
+                <p class="address">123 Free Code Camp Drive</p>
+            </footer>
+        </div>
+    </body>
+</html>
