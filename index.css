@@ -74,7 +74,7 @@ hr{
 The default color of a link that has not yet been clicked on is typically blue. The default color of a link that has already been visited from a page is typically purple.
 */
 footer{
-    font-size: 14px;;
+    font-size: 14px;
 }
 a{
     color: black;
